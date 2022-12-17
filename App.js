@@ -1,23 +1,22 @@
-// App.js
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import Lesson1 from './screens/Lesson1';
-import ScoreDetails from './screens/ScoreDetails';
+import Lesson1 from './src/screens/Lesson1';
+import ScoreDetails from './src/screens/ScoreDetails';
+
 const Stack = createStackNavigator();
+
 function NavStack() {
   return (
      <Stack.Navigator
         initialRouteName="Lesson1"
-        screenOptions={{
-          headerTitleAlign: 'center',
-          headerStyle: {
-            backgroundColor: '#621FF7',
-          },
-          headerTintColor: '#fff',
-          headerTitleStyle :{
-            fontWeight: 'bold',
-          },
+        screenOptions=
+        {{
+            headerTitleAlign: 'center',
+            headerStyle: { backgroundColor: 'white', },
+            
+            headerTintColor: '#fff',
+            headerTitleStyle :{ fontWeight: 'bold', color: 'black',},
         }}
       >
       <Stack.Screen 
